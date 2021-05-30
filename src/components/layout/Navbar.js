@@ -5,7 +5,7 @@ import reduxlogo from './react-redux.png';
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-light bg-dark mb-5">
+      <nav className="navbar navbar-light bg-warning mb-5">
         <div className="container">
           <div className="navbar-header">
             <Link className="navbar-brand text-white text-lg brand-text" to="/">

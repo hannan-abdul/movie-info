@@ -16,3 +16,9 @@ code {
   width: 20%;
   max-width: 100%;
 }
+
+.jumbotron{
+  background-color: #89a5c0;
+  border-radius: 20px;
+}
+

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-
 import { fetchMovie, setLoading } from '../../actions/searchActions';
-
 import Spinner from '../layout/Spinner';
 
 export class Movie extends Component {
@@ -17,7 +15,7 @@ export class Movie extends Component {
     let movieInfo = (
       <div className="container">
         <div className="row">
-          <div className="col-md-4 card card-body">
+          <div className="col-md-4 card bg-info card-body">
             <img src={movie.Poster} className="thumbnail" alt="Poster" />
           </div>
           <div className="col-md-8">
@@ -48,7 +46,7 @@ export class Movie extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="card card-body bg-dark my-5 text-light">
+          <div className="card card-body bg-info my-5 text-light">
             <div className="col-md-12">
               <h3>About </h3>
               {movie.Plot}
@@ -57,7 +55,7 @@ export class Movie extends Component {
                 href={'https://www.imdb.com/title/' + movie.imdbID}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary"
+                className="btn btn-warning"
               >
                 View on IMDB
               </a>

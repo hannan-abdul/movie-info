@@ -1,6 +1,5 @@
 import { SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING } from './types';
 import axios from 'axios';
-
 import { APIKey } from '../APIKey';
 
 export const searchMovie = text => dispatch => {
